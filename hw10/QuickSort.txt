@@ -1,0 +1,6 @@
+		Longer first	Shorter first	original
+leftmost:	0.01707		0.01808		0.02202	
+median of three:0.02502		0.01909		0.02102
+
+基本上這次是以課本範例7.6程式進行操作
+有取出中位數

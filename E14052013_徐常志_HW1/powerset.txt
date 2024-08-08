@@ -1,0 +1,9 @@
+定義一個無回傳型態的函數powerset，並且可接收兩個整數型態的引數，當n!=number時，
+會將bool型態的值設成false或是true。而當n=number時，進入for迴圈時，b[i]為false時，
+不會印出a[i]，b[i]為true時，會印出a[i]，可以由此挑出不需要的元素，得到需要子集合，
+例如:在a.b.c中，挑出b，得到{a.c}這一個子集合。
+
+
+主函式用vector陣列來儲存輸入的字串，再將內容指定給型態為string的a陣列。
+再將a陣列傳入powerset函數中。
+

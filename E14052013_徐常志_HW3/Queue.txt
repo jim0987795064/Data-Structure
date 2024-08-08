@@ -1,0 +1,21 @@
+首先將操作分成兩個函式:
+Arrangement和Operation，  
+並設兩個多維global vector array，
+分別是array以及store，array紀錄成員名子，
+store則記錄ouptut結果
+
+Arrangement:
+將input的內容設定，	    
+group變數紀錄朋友有幾群，
+number變數紀錄每一組有幾人，
+member紀錄成員名子。
+
+Operation:
+設一字串變數x以及一個字元變數y和變數index，
+當x為DEQUEUE時，刪除store[0]的第一個元素，
+當x為ENQUEUE時，插入元素，
+若為第一次插入的元素則執行第57行，直接插入在第一個元素
+若為非group成員則執行第52行，放置到陣列最尾端
+若非第一次插入且為group成員，則執行第63行，由index變數判斷在陣列是否有同一group的元素，若有則插到此元素之前，若沒有則插到陣列最後一個位置
+
+在main程式中，先呼叫Arrangement再呼叫Operation，最後由store[1]印出output。
